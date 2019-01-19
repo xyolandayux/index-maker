@@ -1,8 +1,8 @@
 /*
 *This class creates and organizes a list of words found in the imputed text file and return them in an alphabetical order. 
-*Gets rid of any excess punctuation or blank spaces to make it just a index for words and numbers.
+*Gets rid of any excess punctuation or blank spaces to make it just an index for words and numbers.
 *Created by: Yolanda Yu
-*Last modified on: April 13th, 2017
+*Last modified: April 13th, 2017
 */
 
 
@@ -23,7 +23,7 @@ public class DocumentIndex extends ArrayList<IndexEntry>
     super(capacity);  //calling constructor from superclass
   }
 
-  //Organizes all the words found in a alphabetical order
+  //Organizes all the words found in an alphabetical order
   private int foundOrInserted(String word)
   { 
     //Compare all the words already in the ArrayList to the new found word, then after comparing, insert the word in the right location based on alphabetical order
@@ -31,7 +31,7 @@ public class DocumentIndex extends ArrayList<IndexEntry>
     {
       //Compare the word at location i to the new word
       int location = (get(i).getWord()).compareToIgnoreCase(word);
-      //if the word is already there, then don’t do anything, just return the location 
+      //if the word is already there, then donâ€™t do anything, just return the location 
       if (location == 0)
       {
         return i;
