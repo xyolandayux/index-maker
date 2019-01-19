@@ -59,5 +59,12 @@ public class IndexMaker
     //Prints out everything in the index into the output file txt
     for (IndexEntry entry : index)
       outputFile.println(entry);
+   
+    // Finish and wrap up the file
+    inputFile.close();
+    outputFile.close();
+    
+    keyboard.close();
+    System.out.println("Done.");
   }
-}  
+}
