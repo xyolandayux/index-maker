@@ -3,7 +3,7 @@
 *It uses the scanner method to ask the user which file to read, after scanning through the document, 
 *this class will output another text document containing a list of all the words capitalized 
 *in alphabetical order that appeared in the file, along with a list of line numbers that word has appeared on. 
-*Created by : Maria Litvin and Gary Litvin
+*Created by: Maria Litvin and Gary Litvin
 *Modified by: Yolanda Yu
 *Last Modified: April 13th, 2017
 */
@@ -18,10 +18,10 @@ import java.util.Scanner;
 
 public class IndexMaker
 {
-  //Main method of this class, this method ultimately takes a file, reads it and process it with various different other methods to create an output file that display all the words and line(s) they appear on
+  //Main method of this class, this method ultimately takes a file, reads it and process it with various different other methods to create an output file that displays all the words and line(s) they appear on
   public static void main(String[] args) throws IOException
   {
-    //Initialize and use a scanner to ask for user’s choice of imputed text file. As well as asking the name of their output file
+    //Initialize and use a scanner to ask for userâ€™s choice of imputed text file. As well as asking the name of their output file
     Scanner keyboard = new Scanner(System.in);
     String fileName;
 
@@ -50,7 +50,7 @@ public class IndexMaker
     //Create new a index from DocumentIndex
     DocumentIndex index = new DocumentIndex();
 
-    //This setup the array list’s line number being incremented 
+    //This setup the array listâ€™s line number being incremented 
     String line;
     int lineNum = 0;
     while ((line = inputFile.readLine()) != null)
