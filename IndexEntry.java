@@ -1,9 +1,9 @@
 
 /*
 *This class creates and organizes an ArrayList containing all the lines a certain word has appeared on 
-*and make them print out as string in numerical order next to the word that’s being searched for.
-*Created by : Yolanda Yu
-*Last modified on: April 13th, 2017
+*and make them print out as a string in numerical order next to the word thatâ€™s being searched for.
+*Created by: Yolanda Yu
+*Last modified: April 13th, 2017
 */
 import java.util.ArrayList;
 
@@ -34,12 +34,12 @@ public class IndexEntry
     return word;
   }
 
-  //Convert the ArrayList into String and return the word followed by it’s respective list of line numbers (now a String) 
+  //Convert the ArrayList into String and return the word followed by itâ€™s respective list of line numbers (now a String) 
   public String toString()
   {
     String list = numsList.toString();  //convert numsList into a string
-    list = list.substring(1, list.length() - 1);  //Get rid of the brackets at each end, for that it’s displayed after being converted
-    return word + " " + list;  //return the word followed by it’s line number list
+    list = list.substring(1, list.length() - 1);  //Get rid of the brackets at each end, for that itâ€™s displayed after being converted
+    return word + " " + list;  //return the word followed by itâ€™s line number list
   }
 }
 
